@@ -1,7 +1,16 @@
 // path: ./config/plugins.js
 
 module.exports = ({ env }) => ({
-    // ...
+    email: {
+        provider: 'sendgrid',
+        providerOptions: {
+          apiKey: env('SENDGRID_API_KEY'),
+        },
+        settings: {
+          defaultFrom: 'admin@getmagic.ai',
+          defaultReplyTo: 'admin@getmagic.ai',
+        },
+      },
     upload: {
       config: {
         provider: 'aws-s3', // For community providers pass the full package name (e.g. provider: 'strapi-provider-upload-google-cloud-storage')
@@ -15,17 +24,6 @@ module.exports = ({ env }) => ({
         },
       },
     },
-    //..
-    email: {
-        provider: 'sendgrid',
-        providerOptions: {
-          apiKey: env('SENDGRID_API_KEY'),
-        },
-        settings: {
-          defaultFrom: 'admin@getmagic.ai',
-          defaultReplyTo: 'admin@getmagic.ai',
-        },
-      },
+
   });
   
-//TEST added on Oct 6 10pm
