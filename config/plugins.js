@@ -16,6 +16,16 @@ module.exports = ({ env }) => ({
       },
     },
     //..
+    email: {
+        provider: 'sendgrid',
+        providerOptions: {
+          apiKey: env('SENDGRID_API_KEY'),
+        },
+        settings: {
+          defaultFrom: 'admin@getmagic.ai',
+          defaultReplyTo: 'admin@getmagic.ai',
+        },
+      },
   });
   
 //TEST added on Oct 6 10pm
