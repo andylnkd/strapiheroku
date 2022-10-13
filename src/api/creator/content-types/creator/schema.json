@@ -4,7 +4,8 @@
   "info": {
     "singularName": "creator",
     "pluralName": "creators",
-    "displayName": "Creator"
+    "displayName": "Creator",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -13,6 +14,19 @@
   "attributes": {
     "Name": {
       "type": "string"
+    },
+    "CreatorType": {
+      "type": "enumeration",
+      "enum": [
+        "YouTube Creator",
+        "TikTok Creator",
+        "Instagram Creator",
+        "Content Editor",
+        "Other"
+      ]
+    },
+    "Description": {
+      "type": "richtext"
     }
   }
 }
