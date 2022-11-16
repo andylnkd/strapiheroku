@@ -27,6 +27,12 @@
     },
     "Description": {
       "type": "richtext"
+    },
+    "url": {
+      "displayName": "url",
+      "type": "component",
+      "repeatable": true,
+      "component": "url.url"
     }
   }
 }
