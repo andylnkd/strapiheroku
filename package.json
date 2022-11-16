@@ -2,7 +2,7 @@
   "name": "my-project",
   "private": true,
   "version": "0.1.0",
-  "description": "A Strapi application",
+  "description": "Kollaborate CMS",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
@@ -10,17 +10,17 @@
     "strapi": "strapi"
   },
   "dependencies": {
-    "@strapi/plugin-i18n": "4.4.3",
-    "@strapi/plugin-users-permissions": "4.4.3",
+    "@strapi/plugin-i18n": "4.5.1",
+    "@strapi/plugin-users-permissions": "4.5.1",
     "@strapi/provider-email-sendgrid": "^4.4.3",
     "@strapi/provider-upload-aws-s3": "^4.4.3",
-    "@strapi/strapi": "4.4.3",
+    "@strapi/strapi": "4.5.1",
     "better-sqlite3": "7.4.6",
     "pg": "^8.8.0",
     "pg-connection-string": "^2.5.0"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "apdhalwani@"
   },
   "strapi": {
     "uuid": "d1592f49-6a48-4e69-a090-0be2eb0db550"
