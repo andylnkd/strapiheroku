@@ -17,7 +17,8 @@
     "@strapi/strapi": "4.5.1",
     "better-sqlite3": "7.4.6",
     "pg": "^8.8.0",
-    "pg-connection-string": "^2.5.0"
+    "pg-connection-string": "^2.5.0",
+    "strapi-plugin-meilisearch": "^0.8.0"
   },
   "author": {
     "name": "apdhalwani@"
